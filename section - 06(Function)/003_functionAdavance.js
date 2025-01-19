@@ -4,4 +4,4 @@ const greet = function greetFunction() {
 };
 
 greet();
-// This will call itself recursively, but without a base case, it will cause a stack overflow.
+// This will call itself recursively, but without a base case, it will cause a stack overflow...

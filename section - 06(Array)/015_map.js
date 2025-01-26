@@ -75,7 +75,7 @@
 // // Map the filtered numbers to an array of objects
 // const items = filtered.map(n => {
 //   return { value: n };
- 
+
 // });
 
 // console.log(items);
@@ -114,16 +114,149 @@
 
 //004 // map the object with array ////////////////////////////////////////////////////////////////
 
-const filtered = [1,  2, 3];
+// const filtered = [1,  2, 3];
 
-// Map the filtered numbers to an array of objects
-const items = filtered.map(n =>  {value: n }
- 
-);
+// // Map the filtered numbers to an array of objects
+// const items = filtered.map(n =>  {value: n }
 
-console.log(items);
+// );
+
+// console.log(items);
 
 
 //output
 // [ { value: 1 }, { value: 2 }, { value: 3 } ]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//practice some  to map one property only from an object ////////////////////////////////////////////
+
+// const movies = [
+//     { title: 'a', year: 2018, rating: 4.5 },
+//     { title: 'b', year: 2018, rating: 4.7 },
+//     { title: 'c', year: 2018, rating: 3 },
+//     { title: 'd', year: 2017, rating: 4.5 },
+// ];
+
+
+// const result  = movies.map((element)=>
+//     element.rating,
+
+// )
+
+
+// console.log(result)
+
+
+//output
+// [ 4.5, 4.7, 3, 4.5 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////copy more than one priperty from an object /./////////////////////////////////////////////////////
+
+
+
+// const movies = [
+//     { title: 'a', year: 2018, rating: 4.5 },
+//     { title: 'b', year: 2018, rating: 4.7 },
+//     { title: 'c', year: 2018, rating: 3 },
+//     { title: 'd', year: 2017, rating: 4.5 },
+// ];
+
+// const result = movies.map((element) => ({
+//     title: element.title, // Include the title
+//     rating: element.rating // Include the rating
+// }));
+
+// console.log(result);
+
+
+//output
+// [
+//     { title: 'a', rating: 4.5 },
+//     { title: 'b', rating: 4.7 },
+//     { title: 'c', rating: 3 },
+//     { title: 'd', rating: 4.5 }
+//   ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// add some more property to an object //////////////////////////////////////////////////
+
+
+
+
+const movies = [
+    { title: 'a', year: 2018, rating: 4.5 },
+    { title: 'b', year: 2018, rating: 4.7 },
+    { title: 'c', year: 2018, rating: 3 },
+    { title: 'd', year: 2017, rating: 4.5 },
+];
+
+const result = movies.map((element) => ({
+    title: element.title, // Include the title
+    rating: element.rating, // Include the rating
+    extra: 'xxxxxxxxxx'
+
+}));
+
+console.log(result);
+
+
+//output
+// [
+//     { title: 'a', rating: 4.5, extra: 'xxxxxxxxxx' },
+//     { title: 'b', rating: 4.7, extra: 'xxxxxxxxxx' },
+//     { title: 'c', rating: 3, extra: 'xxxxxxxxxx' },
+//     { title: 'd', rating: 4.5, extra: 'xxxxxxxxxx' }
+//   ]

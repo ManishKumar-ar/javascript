@@ -1,6 +1,7 @@
 //001/// here we can see the tatoal arument that we pass ////////
 
 
+
 // function sum(a, b) {
 
 //     console.log(arguments);

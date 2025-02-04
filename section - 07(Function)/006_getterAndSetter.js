@@ -5,6 +5,7 @@
 // lastName: 'Prajapati'
 // };
 
+
 // console.log(person.firstName + ' ' + person.lastName);
 
 

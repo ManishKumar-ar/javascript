@@ -10,6 +10,7 @@ console.log(descriptor);
 //output
 // {
 //     value: [Function: toString],
+
 //     writable: true,
 //     enumerable: false,
 //     configurable: true
